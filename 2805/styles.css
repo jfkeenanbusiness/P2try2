@@ -1,0 +1,117 @@
+body {
+height: 95vh;
+width: auto;
+background-image: url(img/bg\ background.gif);
+animation-duration: 10s;
+min-width: 500px;
+flex-direction: column;
+
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap:nowrap; */
+    /* justify-content: center; */
+}
+
+#logo {
+    /* mix-blend-mode:soft-light; */
+    opacity: 50%;
+    width: 15%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+#logobeeg {
+    /* mix-blend-mode:soft-light; */
+    opacity: 50%;
+    width: 55%;
+    height: auto;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#frame {
+    border: 2em solid #0D0D14;
+    width: 20%;
+    height: auto;
+}
+span {
+font-family: "lores-12", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: aliceblue;
+
+}
+#textbox {
+    width: 37%;
+    height: auto;
+    
+    margin-top: 1.5em ;
+    margin-bottom: 3em;
+    display: hidden;
+    background-color: #0D140D;
+    padding: 1.5em;
+}
+
+b {
+ color: #A53638;
+}
+
+
+/* hover effects */
+img:hover {
+	transform: scale(1.02);
+	transition: ease-in-out;
+	transition-duration: .2s;
+}
+
+span:hover {
+	transform: scale(1.02);
+	transition: ease-in-out;
+	transition-duration: .2s;
+    display:block;
+
+    animation:jitter2 200ms linear infinite;display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+/* https://codepen.io/zerospree/pen/GRmBga */
+.jittery { 
+    animation:jitter 400ms linear infinite;display:inline-block}
+
+    .jitteryslow { 
+        animation:jitter 4200ms linear infinite;display:inline-block}
+
+@keyframes jitter{ 50%{transform:skewY(0.1deg) skewX(-0.1deg) scale(1.006);} }
+
+@keyframes jitter2{ 50%{transform:skewY(0.5deg) skewX(-0.5deg) scale(1.006);} }
+
+
+
+/* https://codepen.io/punkydrewster713/pen/zYKdywP */
+
+/* .text span {
+    opacity: 0;
+    color: aliceblue;
+ }
+ .text span.revealed {
+    opacity: 1;
+ }
+ .text span.green {
+    color: #27ae60;
+ }
+ .text span.red {
+    color: #ff0000;
+ } */
